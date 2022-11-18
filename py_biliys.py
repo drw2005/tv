@@ -47,7 +47,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 	cookies = ''
 	def getCookie(self):
 		#在cookies_str中填入会员或大会员cookie，以获得更好的体验
-		cookies_str = "buvid3=639BC80E-53EA-EAB4-88DD-AC777BF0EFF453435infoc; i-wanna-go-back=-1; buvid_fp_plain=undefined; DedeUserID=7827993; DedeUserID__ckMd5=3450c968d9d4d5b4; b_ut=5; CURRENT_BLACKGAP=0; nostalgia_conf=-1; theme_style=light; hit-dyn-v2=1; CURRENT_QUALITY=80; LIVE_BUVID=AUTO6016613313754464; b_nut=100; fingerprint3=d29bd155899849677c6cbe901195637e; fingerprint=38b752fc0e4062101aef78206f2e07a4; b_lsid=AB1C10AFC_1831BF7B09A; _uuid=A1014DFFC-DD58-19D8-D674-4E4736DBDB2C61007infoc; buvid_fp=38b752fc0e4062101aef78206f2e07a4; buvid4=290B9554-D72B-9FB7-63DA-FFD8AE52F7BB93514-022090815-QWaUPd4sJd4QUeu4q7utGg%3D%3D; CURRENT_FNVAL=4048; bp_t_offset_7827993=727195473008394280; innersign=0; SESSDATA=db9378c4%2C1684203025%2C3970b%2Ab2; bili_jct=9707347346dd64edc8e3e9bb8cdcb3f7; sid=nkbyjnbt; useragent=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTAzLjAuMC4wIFNhZmFyaS81MzcuMzY%3D;"
+		cookies_str = ""
 		cookies_dic = dict([co.strip().split('=') for co in cookies_str.split(';')])
 		rsp = session()
 		cookies_jar = utils.cookiejar_from_dict(cookies_dic)
