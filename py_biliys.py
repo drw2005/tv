@@ -59,8 +59,8 @@ class Spider(Spider):
         return result
 
     # 用户cookies
-    cookies = ''
-    userid = ''
+    cookies = 'buvid3=639BC80E-53EA-EAB4-88DD-AC777BF0EFF453435infoc; i-wanna-go-back=-1; buvid_fp_plain=undefined; DedeUserID=7827993; DedeUserID__ckMd5=3450c968d9d4d5b4; b_ut=5; CURRENT_BLACKGAP=0; nostalgia_conf=-1; theme_style=light; hit-dyn-v2=1; CURRENT_QUALITY=80; LIVE_BUVID=AUTO6016613313754464; b_nut=100; fingerprint3=d29bd155899849677c6cbe901195637e; fingerprint=38b752fc0e4062101aef78206f2e07a4; b_lsid=AB1C10AFC_1831BF7B09A; _uuid=A1014DFFC-DD58-19D8-D674-4E4736DBDB2C61007infoc; buvid_fp=38b752fc0e4062101aef78206f2e07a4; buvid4=290B9554-D72B-9FB7-63DA-FFD8AE52F7BB93514-022090815-QWaUPd4sJd4QUeu4q7utGg%3D%3D; CURRENT_FNVAL=4048; rpdid=|(JYl)mRRlm)0J'uYY)YlkJlk; innersign=0; hit-new-style-dyn=0; SESSDATA=974cdbbc%2C1685176208%2Ce363a%2Ab2; bili_jct=f1ecfe6ba2b9e1c089ad6217a6d5b0b7; sid=70q92dcr; bp_t_offset_7827993=733876247373807653; useragent=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTAzLjAuMC4wIFNhZmFyaS81MzcuMzY%3D;'
+    userid = '7827993'
 
     def getCookie(self):
         self.cookies = self.bilibili.getCookie()
